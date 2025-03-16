@@ -1,15 +1,15 @@
 context:
   name: csp-adapter-discord
-  version: 0.1.1
-  python_min: 3.9
+  version: "0.1.2"
+  python_min: '3.9'
 
 package:
   name: ${{ name|lower }}
   version: ${{ version }}
 
 source:
-    url: https://pypi.org/packages/source/c/csp-adapter-discord/csp_adapter_discord-${{ version }}.tar.gz
-    sha256: 69e604bce6cdbede3a92387200be09b22a14a166a7f09c070ac9f24ef944c496
+  url: https://pypi.org/packages/source/c/csp-adapter-discord/csp_adapter_discord-${{ version }}.tar.gz
+  sha256: c72acc6afd858fa5290d9623dc3228c8fb55f9ffc125b068747d352ef9473de4
 
 build:
   number: 0
