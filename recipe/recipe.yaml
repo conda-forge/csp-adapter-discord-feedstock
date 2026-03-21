@@ -1,7 +1,7 @@
 context:
   name: csp-adapter-discord
-  version: "0.1.2"
-  python_min: '3.9'
+  version: "0.2.0"
+  python_min: '3.11'
 
 package:
   name: ${{ name|lower }}
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/c/csp-adapter-discord/csp_adapter_discord-${{ version }}.tar.gz
-  sha256: c72acc6afd858fa5290d9623dc3228c8fb55f9ffc125b068747d352ef9473de4
+  sha256: 2ec7ea2c1c283f2e59e2ee81f3665dfaeccb9a124cbcf5e4a0ba82ea487dd1d6
 
 build:
   number: 0
@@ -23,6 +23,7 @@ requirements:
     - hatchling
   run:
     - python >=${{ python_min }}
+    - chatom
     - csp
     - discord.py
     - pydantic >=2
